@@ -1,0 +1,93 @@
+body{
+    background-color:lightgray;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin:0;
+    padding:0;
+}
+p{
+    color: black;
+    font-size:25px;
+    align-self:center;
+}
+h1{
+    color: black;
+    font-size: 30px;
+    text-align: center;
+}
+input{
+    border-radius:25px;
+    padding: 5px;
+    margin-left:10px;
+    width:80%;
+    align-self:center;
+}
+button{
+    border-radius: 25px ;
+    padding: 5px;
+    background-color:black;
+    color:white;
+    margin:10px;
+}
+nav{
+    background-color:darkgray;
+    display:flex;
+    align-self: center;
+    justify-content: center;
+    justify-items: space-around;
+    width:100%;
+}
+ul{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-right:30px;
+}
+li{
+    background-color:darkgray;
+    padding:10px;
+    border-radius:25px;
+    transition: 0.3s ease;
+    list-style-type: none;
+    font-size:25px;
+}
+a{
+    color:black;
+    margin:10px;
+    font-size:20px;
+    text-decoration: none;
+    transition: 0.3s ease;
+    align-self:center;
+}
+li:hover{
+    background-color:gray;
+}
+a:hover{
+    background-color:gray;
+    border-radius:25px;
+    width:70px;
+    height:31px;
+    text-align:center;
+}
+.card{
+    background-color:white;
+    display:flex;
+    flex-direction:column;
+    justify-self: center;
+    justify-content:center;
+    border-radius:25px;
+    margin:20px;
+    min-height:250px;
+    max-height:auto;
+    min-width:350px;
+    max-width:500px;
+}
+form{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-content: center;
+}
+label{
+    font-size:20px;
+    align-self: center;
+}
