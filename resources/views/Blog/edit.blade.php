@@ -2,6 +2,7 @@
 <x-slot:title>
     Rediģēt blogu
     </x-slot:title>
+    <div class="card">
     <h1>Rediģēt blogu</h1>
     <form method="POST" action="/blogs/{{$blog->id}}">
     @csrf
@@ -20,4 +21,5 @@
         @enderror
         <button>Saglabāt</button>
     </form>
+</div>
 </x-layout>
