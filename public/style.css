@@ -61,13 +61,7 @@ a{
 li:hover{
     background-color:gray;
 }
-a:hover{
-    background-color:gray;
-    border-radius:25px;
-    width:70px;
-    height:31px;
-    text-align:center;
-}
+
 .card{
     background-color:white;
     display:flex;
@@ -91,3 +85,13 @@ label{
     font-size:20px;
     align-self: center;
 }
+
+
+
+/* a:hover{
+    background-color:gray;
+    border-radius:25px;
+    width:70px;
+    height:31px;
+    text-align:center;
+} */

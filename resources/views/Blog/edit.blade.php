@@ -16,7 +16,7 @@
         <label>
         <textarea name= "content" >{{old('content',$blog->content) }}</textarea>
        </label>
-       @error("blog")
+       @error("content")
             <p>{{ $message }}</p>
         @enderror
         <button>Saglabāt</button>
