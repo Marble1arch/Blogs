@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string("title",255);
             $table->string("content",255);
-            $table->date("datee");
+            $table->date("date");
             $table->foreignId('blog_id')->constrained()->onDelete('cascade');
             $table->timestamps();
         });

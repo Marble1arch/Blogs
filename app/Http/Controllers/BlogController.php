@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 use App\Models\Blog;
 use App\Models\Category;
+use App\Models\Comment;
 use Illuminate\Http\Request;
 
 class BlogController extends Controller
@@ -10,11 +11,10 @@ class BlogController extends Controller
         public function index()
     {
         $blogs = Blog::all();
-        return view("blog.index", compact("blogs"));
+        return view("Blog.index", compact("blogs"));
     }
     public function show(Blog $blog){
-        $categories = Category::with('blogs')->get();
-        return view("blog.show",compact("blog"));
+    return view("blog.show",compact("blog"));
     }
     public function create(){
         $categories = Category::all();
@@ -29,7 +29,7 @@ class BlogController extends Controller
         Blog::create([
             "title" => $validated["title"],
             "content" => $validated["content"],
-            "categories_id" => $validated["catid"]
+            "category_id" => $validated["catid"]
         ]);
         return redirect("/blogs");
     }
@@ -46,7 +46,7 @@ class BlogController extends Controller
         $blog->save(); 
         return redirect("/blogs/$blog->id");  
     }
-            public function destroy(Blog $blog){
+    public function destroy(Blog $blog){
         $blog->delete();
         return redirect("/blogs");
     }

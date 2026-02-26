@@ -8,9 +8,13 @@
     @csrf
     @method('PUT')
        <label>
-        <input name= "comment" value= "{{old('comment',$comment->title) }}" />
+        <input name= "author" value= "{{old('author',$comment->title) }}" />
+        <input name= "text" value= "{{old('text',$comment->content) }}" />
        </label></br>
-        @error("comment")
+        @error("title")
+            <p>{{ $message }}</p>
+        @enderror
+        @error("content")
             <p>{{ $message }}</p>
         @enderror
         <button>Saglabāt</button>

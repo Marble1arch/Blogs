@@ -3,8 +3,13 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
-
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 class Comment extends Model
 {
-    protected $fillable = ["title", "content","datee"];
+    protected $fillable = ["title", "content","date","blog_id"];
+    public function blogss(): BelongsTo
+{
+    return $this->belongsTo(Blog::class);
 }
+}
+
